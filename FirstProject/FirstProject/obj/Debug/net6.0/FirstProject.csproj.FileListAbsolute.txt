@@ -1,0 +1,15 @@
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/bin/Debug/net6.0/FirstProject
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/bin/Debug/net6.0/FirstProject.deps.json
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/bin/Debug/net6.0/FirstProject.runtimeconfig.json
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/bin/Debug/net6.0/FirstProject.dll
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/bin/Debug/net6.0/FirstProject.pdb
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.csproj.AssemblyReference.cache
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.AssemblyInfoInputs.cache
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.AssemblyInfo.cs
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.csproj.CoreCompileInputs.cache
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.dll
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/refint/FirstProject.dll
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.pdb
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/FirstProject.genruntimeconfig.cache
+/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/Debug/net6.0/ref/FirstProject.dll
