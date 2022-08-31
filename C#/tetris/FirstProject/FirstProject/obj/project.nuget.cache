@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a4irXGHU9iaFIvWlT4cLDNYC9hAvLwK5uA74erErAMFNAv5Dex/P8LkkrhSPbt9+wdahyozuUlFfASfec7mYRw==",
+  "dgSpecHash": "/J8kcFgIdqLIpgoaWy+9uhrfwYpMYkeJp5OSIyWmHQ8rxADw7gzWovZWZLimX/ksIMdZ07hNAGNTun0vlFAxiA==",
   "success": true,
-  "projectFilePath": "/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/FirstProject.csproj",
+  "projectFilePath": "/Users/choiminjae/Study/my-emb-class/C#/tetris/FirstProject/FirstProject/FirstProject.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

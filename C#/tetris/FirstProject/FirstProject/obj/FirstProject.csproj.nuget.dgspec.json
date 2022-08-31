@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/FirstProject.csproj": {}
+    "/Users/choiminjae/Study/my-emb-class/C#/tetris/FirstProject/FirstProject/FirstProject.csproj": {}
   },
   "projects": {
-    "/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/FirstProject.csproj": {
+    "/Users/choiminjae/Study/my-emb-class/C#/tetris/FirstProject/FirstProject/FirstProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/FirstProject.csproj",
+        "projectUniqueName": "/Users/choiminjae/Study/my-emb-class/C#/tetris/FirstProject/FirstProject/FirstProject.csproj",
         "projectName": "FirstProject",
-        "projectPath": "/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/FirstProject.csproj",
+        "projectPath": "/Users/choiminjae/Study/my-emb-class/C#/tetris/FirstProject/FirstProject/FirstProject.csproj",
         "packagesPath": "/Users/choiminjae/.nuget/packages/",
-        "outputPath": "/Users/choiminjae/Data/edu/dgsw/work/FirstProject/FirstProject/obj/",
+        "outputPath": "/Users/choiminjae/Study/my-emb-class/C#/tetris/FirstProject/FirstProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/choiminjae/.nuget/NuGet/NuGet.Config"
