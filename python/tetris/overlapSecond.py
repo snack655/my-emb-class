@@ -35,7 +35,7 @@ def delete_block():
                 gotoxy(i+x, j+y)
                 print("-")
                
-def overlap_check(tmp_x, tmp_y):
+def my_overlap_check(tmp_x, tmp_y):
     overlap_count = 0
    
     if((x + tmp_x + 1) <= 0):
@@ -47,6 +47,14 @@ def overlap_check(tmp_x, tmp_y):
             if i == 1:
                 overlap_count += 1
        
+    return overlap_count
+
+def teacher_overlap_check(xx, yy):
+    overlap_count = 1
+    if ((x + xx) >= 0) and ((x + xx) <= 8) and ((y + yy) <= 18): 
+        tmp_back = background[0 + y + yy: 4 + y + yy, 0 + x + xx:4 + x + xx]
+        overlap_block = tmp_back & block_L
+        overlap_count = overlap_block.sum()
     return overlap_count
 
 background = np.array([
@@ -92,27 +100,26 @@ while True:
         key = msvcrt.getch()
        
         if key == b'a':
-            if(overlap_check(-1, 0) == 0):
+            if teacher_overlap_check(-1, 0) == 0:
                 delete_block()
                 x -= 1
                 make_block()
            
         elif key == b'd':
-            if(overlap_check(1, 0) == 0):
+            if teacher_overlap_check(1, 0) == 0:
                 delete_block()
                 x += 1
                 make_block()
            
         elif key == b's':
-            if(overlap_check(0, 1) == 0):
+            if teacher_overlap_check(0, 1) == 0:
                 delete_block()
                 y += 1
                 make_block()
                
     if count == 100:
         count = 0
-       
-        if(overlap_check(0, 1) == 0):
+        if teacher_overlap_check(0, 1) == 0:
             delete_block()
             y += 1
             make_block()
