@@ -1,0 +1,11 @@
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\bin\Debug\tetris.exe.config
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\bin\Debug\tetris.exe
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\bin\Debug\tetris.pdb
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.csproj.AssemblyReference.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.csproj.SuggestedBindingRedirects.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.Properties.Resources.resources
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.csproj.GenerateResource.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.csproj.CoreCompileInputs.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.exe
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.pdb
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\secondTetris\tetris\tetris\obj\Debug\tetris.Form1.resources
