@@ -9,6 +9,8 @@
 #include <wiringPi.h>
 #include <wiringSerial.h>
 
+#include <softPwm.h>
+
 int serial;
 
 char device[] = "/dev/ttyACM0";
@@ -16,6 +18,7 @@ char device[] = "/dev/ttyACM0";
 unsigned long baudrate = 9600;
 
 #define LED_PIN 1
+#define SERVO_PIN 0
 
 int pwmFlag = 0;
 int bright = 0;
@@ -49,7 +52,7 @@ void* Thread_LED_PWM(void* arg) {
 	}
 }
 
-void setup() {
+void setup() { 
 	printf("Start!!!");
 	fflush(stdout);
 	
@@ -128,11 +131,15 @@ void modeThree() {
 }
 
 void modeFour() {
-	printf("4 응애");
+	softPwmCreate(SERVO_PIN, 0, 200);
+
+	softPwmWrite(SERVO_PIN, 24);
 }
 
 void modeFive() {
-	printf("5 응애");
+	softPwmCreate(SERVO_PIN, 0, 200);
+
+	softPwmWrite(SERVO_PIN, 5);
 }
 
 void modeSix() {
