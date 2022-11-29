@@ -1,0 +1,11 @@
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\bin\Debug\SerialTest.exe.config
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\bin\Debug\SerialTest.exe
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\bin\Debug\SerialTest.pdb
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.csproj.AssemblyReference.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.Form1.resources
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.Properties.Resources.resources
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.csproj.GenerateResource.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.csproj.CoreCompileInputs.cache
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.exe
+C:\Users\DGSW\Documents\GitHub\my-emb-class\C#\SerialTest\SerialTest\SerialTest\obj\Debug\SerialTest.pdb
