@@ -6,6 +6,8 @@
 #include<stdbool.h>
 #include<sys/socket.h>
 #include<sys/types.h>
+#include <errno.h>
+
 
 #include<linux/if_packet.h>
 #include<netinet/in.h>		 
@@ -17,10 +19,33 @@
 
 #include<stdlib.h>
 
+#include <wiringPi.h>
+#include <wiringSerial.h>
+
+#include <softPwm.h>
+
+int serial;
+
+char device[] = "/dev/ttyACM0";
+
+unsigned long baudrate = 9600;
+
+#define LED_PIN_1 1
+#define LED_PIN_2 25
+
+#define SERVO_PIN 0
+
 struct sockaddr saddr;
 struct sockaddr_in source,dest;
 
 void recv_data_process(unsigned char* buffer,int buflen);
+
+void led1On(void);
+void led1Off(void);
+void led2On(void);
+void led2Off(void);
+void servoLeft(void);
+void servoRight(void);
 
 int main()
 {
@@ -37,6 +62,16 @@ int main()
 	{
 		printf("error in socket\n");
 		return -1;
+	}
+	
+	if((serial = serialOpen(device, baudrate)) < 0) {
+		fprintf(stdout, "응애 오류 났어 : %s\n", strerror (errno));
+		exit(1);
+	}
+	
+	if (wiringPiSetup() == -1) {
+		fprintf(stdout, "응애 wiringPi :%s\n", strerror(errno));
+		exit(1);
 	}
 
 	while(1)
@@ -77,11 +112,60 @@ void recv_data_process(unsigned char* buffer,int buflen)
 		printf("%d\n", (buffer[36] << 8)|buffer[37]);
 
 		printf("Data : ");
-		for(int i = 42; i < 46; i++) {
-			printf("%c", buffer[i]); 
+		char str[6];
+		for(int i = 42; i < 48; i++) {
+			str[i-42] = buffer[i];
 		}
-		printf("\n");			
+		printf("%s", str); 
+		printf("\n");	
+		
+		serialPuts(serial, str);
+		/*
+		if(strcmp(str,"led1on") == 0) {
+			led1On();
+		} else if(strcmp(str, "led1of") == 0) {
+			led1Off();
+		} else if(strcmp(str, "led2on") == 0) {
+			led2On();
+		} else if(strcmp(str, "led2of") == 0) {
+			led2Off();
+		} else if(strcmp(str, "serlef") == 0) {
+			servoLeft();
+		} else if(strcmp(str, "serrit") == 0) {
+			servoRight();
+		}
+		*/
 	}
+}
+
+void led1On() {
+	pinMode(LED_PIN_1, OUTPUT);
+	digitalWrite(LED_PIN_1, HIGH);
+}
+
+void led1Off() {
+	pinMode(LED_PIN_1, OUTPUT);
+	digitalWrite(LED_PIN_1, LOW);
+}
+
+void led2On() {
+	pinMode(LED_PIN_2, OUTPUT);
+	digitalWrite(LED_PIN_2, HIGH);
+}
+
+void led2Off() {
+	pinMode(LED_PIN_2, OUTPUT);
+	digitalWrite(LED_PIN_2, LOW);
+}
+
+void servoLeft() {
+	softPwmCreate(SERVO_PIN, 0, 200);
+	softPwmWrite(SERVO_PIN, 24);
+}
+
+void servoRight() {
+	softPwmCreate(SERVO_PIN, 0, 200);
+	softPwmWrite(SERVO_PIN, 5);
 }
 
 

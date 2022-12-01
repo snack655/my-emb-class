@@ -20,6 +20,8 @@ unsigned long baudrate = 9600;
 #define LED_PIN 1
 #define SERVO_PIN 0
 
+
+
 int pwmFlag = 0;
 int servoFlag = 0;
 int allFlag = 0;
@@ -191,7 +193,6 @@ void modeSeven() {
 	softPwmCreate(SERVO_PIN, 0, 200);
 	pinMode(LED_PIN, PWM_OUTPUT);
 	allFlag = 1;
-	
 }
 
 int main() {
