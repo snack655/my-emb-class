@@ -1,6 +1,7 @@
 #-*-coding: utf-8 -*-
 
 # 필요한 라이브러리를 불러옵니다.
+import RPi.GPIO as GPIO
 import spidev
 import time
 
@@ -9,6 +10,12 @@ delay = 0.5
 
 # MCP3008 채널 중 센서에 연결한 채널 설정
 ldr_channel = 0
+
+led_pin = 21
+GPIO.setwarnings(False)
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(led_pin, GPIO.OUT)
 
 # SPI 인스턴스 api 설정
 spi = spidev.SpiDev()
@@ -29,6 +36,11 @@ def readadc(adcnum):
 
 while True:
     ldr_value = readadc(ldr_channel)
+    if ldr_value > 3000:
+        GPIO.output(led_pin, 0)
+    else: 
+        GPIO.output(led_pin, 1)
+            
     print("--------------------------")
     print("LDR Value: %d" % ldr_value)
     time.sleep(delay)
